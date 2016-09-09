@@ -1,0 +1,8 @@
+## Interface: 70000
+## Title: BGMusic
+## Author: Zesschrno
+## Version: 1.0
+## LoadOnDemand: 0
+## DefaultState: enabled
+
+BGMusic.lua
