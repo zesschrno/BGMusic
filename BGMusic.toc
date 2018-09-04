@@ -1,4 +1,4 @@
-## Interface: 70000
+## Interface: 80000
 ## Title: BGMusic
 ## Author: Zesschrno
 ## Version: 2.0
