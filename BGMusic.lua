@@ -41,7 +41,7 @@ local song = {
     },
     bardoma = {
       path = "Interface\\AddOns\\BGMusic\\windowless_building.mp3",
-      duration = 262
+      duration = 260
     },
     puerto_libre = {
       path = "Interface\\AddOns\\BGMusic\\Lets_Battle_Mix.mp3",
