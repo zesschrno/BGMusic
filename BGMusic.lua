@@ -25,6 +25,12 @@ local song = {
       path = "Interface\\AddOns\\BGMusic\\moon_river.mp3",
       duration = 510
     },
+    
+    -- bfa raid boss 
+    jaina = {
+      path = "Interface\\AddOns\\BGMusic\\Let-It-Go-Winter.mp3",
+      duration = 229
+    },
 
     --bfa dungeon
     mansion_tarjasenda = {
@@ -50,6 +56,12 @@ local song = {
     santuario_tormenta = {
       path = "Interface\\AddOns\\BGMusic\\underground_cave.mp3",
       duration = 153
+    },
+    
+    --bfa raid
+    dazaralor = {
+      path = "Interface\\AddOns\\BGMusic\\full_circle.mp3",
+      duration = 85
     },
 
 
@@ -79,6 +91,15 @@ local song = {
     puerto_libre = {
       path = "Interface\\AddOns\\BGMusic\\Karakuri_Defense_System_Activate.mp3",
       duration = 204
+    },
+    santuario_tormenta = {
+      path = "Interface\\AddOns\\BGMusic\\windowless_building.mp3",
+      duration = 260
+    },
+    -- bfa raid
+    dazaralor = {
+      path = "Interface\\AddOns\\BGMusic\\battle_lusamine.mp3",
+      duration = 179
     }
   }
 }
@@ -98,6 +119,11 @@ local boss = {
   },
   sombra_de_xavius = {
     npc_id = 99192
+  },
+  
+  -- bfa raid boss
+  jaina = {
+    npc_id = 149684
   }
 }
 
@@ -131,6 +157,9 @@ local instance = {
   },
   uldir = {
     instanceID = 1861
+  },
+  dazaralor = {
+    instanceID = 2070
   }
 }
 
@@ -151,7 +180,7 @@ end)
 
 function battle_events:PLAYER_REGEN_DISABLED(event)
   on_battle = true
-  PlaySoundFile("Sound/Creature/Jaraxxus/Cr_Jaraxxus_Aggro01.ogg", 'Dialog')
+--  PlaySoundFile("Sound/Creature/Jaraxxus/Cr_Jaraxxus_Aggro01.ogg", 'Dialog')
   selecting_song()
 end
 
@@ -183,6 +212,7 @@ end
 -- UNIT_SPELLCAST_START
 
 function selecting_song()
+  -- legion boss
   if boss_filter(boss.cordana.npc_id) then
     battle_play_file(song.boss.cordana)
   elseif boss_filter(boss.archidruida_glaidalis.npc_id) then
@@ -193,7 +223,12 @@ function selecting_song()
     battle_play_file(song.boss.dresaron)
   elseif boss_filter(boss.sombra_de_xavius.npc_id) then
     battle_play_file(song.boss.sombra_de_xavius)
+   
+  -- bfa raid boss
+  elseif boss_filter(boss.jaina.npc_id) then
+    battle_play_file(song.boss.jaina)
 
+  -- bfa dungeon
   elseif instance_filter(instance.mansion_tarjasenda.instanceID) then
     if is_boss() then
       battle_play_file(song.boss.mansion_tarjasenda)
@@ -228,7 +263,14 @@ function selecting_song()
     if is_boss() then
       battle_play_file(song.boss.santuario_tormenta)
     else
-      battle_play_file(song.default)
+      battle_play_file(song.instance.santuario_tormenta)
+    end
+  -- bfa raid
+  elseif instance_filter(instance.dazaralor.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.dazaralor)
+    else
+      battle_play_file(song.instance.dazaralor)
     end
 
   elseif is_boss() then
