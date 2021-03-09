@@ -1,7 +1,7 @@
 local song = {
   default = {
-    path = "Interface\\AddOns\\BGMusic\\Energy_Zone.mp3",
-    duration = 87
+    path = "Interface\\AddOns\\BGMusic\\Tearing_Through_Heaven.mp3",
+    duration = 131
   },
   boss = {
     -- legion boss
@@ -31,6 +31,37 @@ local song = {
       path = "Interface\\AddOns\\BGMusic\\Let-It-Go-Winter.mp3",
       duration = 229
     },
+    
+    -- sl dungeon
+    teatro_dolor = {
+      path = "Interface\\AddOns\\BGMusic\\The_Verge_of_Death_(Rain).mp3",
+      duration = 171
+    },
+    peste_abrumadora = {
+      path = "Interface\\AddOns\\BGMusic\\The_Verge_of_Death_(Rain).mp3",
+      duration = 171
+    },
+    destruccion_necrotica = {
+      path = "Interface\\AddOns\\BGMusic\\Koloktos_Moldarach.mp3",
+      duration = 161
+    },
+    profundidades_sanguineas = {
+      path = "Interface\\AddOns\\BGMusic\\Lost_Again.mp3",
+      duration = 310
+    },
+    salones_expiacion = {
+      path = "Interface\\AddOns\\BGMusic\\Lost_Again.mp3",
+      duration = 310
+    },
+    torres_ascencion = {
+      path = "Interface\\AddOns\\BGMusic\\Koloktos_Moldarach.mp3",
+      duration = 161
+    },
+    -- sl raid
+    castillo_nathria = {
+      path = "Interface\\AddOns\\BGMusic\\Raid.mp3",
+      duration = 216
+    },    
 
     --bfa dungeon
     mansion_tarjasenda = {
@@ -71,6 +102,37 @@ local song = {
     }
   },
   instance = {
+    -- sl dungeon
+    teatro_dolor = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    peste_abrumadora = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    destruccion_necrotica = {
+      path = "Interface\\AddOns\\BGMusic\\The_Shackled_Wolves_(Rain).mp3",
+      duration = 353
+    },
+    profundidades_sanguineas = {
+      path = "Interface\\AddOns\\BGMusic\\Wine_Of_Aluqah.mp3",
+      duration = 282
+    },
+    salones_expiacion = {
+      path = "Interface\\AddOns\\BGMusic\\Wine_Of_Aluqah.mp3",
+      duration = 282
+    },
+    torres_ascencion = {
+      path = "Interface\\AddOns\\BGMusic\\Tempest_of_Seasons_(Rain).mp3",
+      duration = 307
+    },
+    -- sl raid
+    castillo_nathria = {
+      path = "Interface\\AddOns\\BGMusic\\At_What_Cost_(Rain).mp3",
+      duration = 349
+    },
+  
     -- bfa dungeon
     mansion_tarjasenda = {
       path = "Interface\\AddOns\\BGMusic\\mansion_tarjasenda.mp3",
@@ -128,6 +190,31 @@ local boss = {
 }
 
 local instance = {
+  -- sl dungeon
+  teatro_dolor = {
+    instanceID = 2293
+  },
+  peste_abrumadora = {
+    instanceID = 2289
+  },
+  destruccion_necrotica = {
+    instanceID = 2286
+  },
+  profundidades_sanguineas = {
+    instanceID = 2284
+  },
+  salones_expiacion = {
+    instanceID = 2287
+  },
+  torres_ascencion = {
+    instanceID = 2285
+  },
+  -- sl raid
+  castillo_nathria = {
+    instanceID = 2296
+  },
+  
+  -- bfa dungeon
   ataldazar = {
     instanceID = 1763
   },
@@ -155,6 +242,7 @@ local instance = {
   mansion_tarjasenda = {
     instanceID = 1862
   },
+  -- bfa raid
   uldir = {
     instanceID = 1861
   },
@@ -163,6 +251,14 @@ local instance = {
   }
 }
 
+local friend_units = {
+  "player",
+  "party1",
+  "party2",
+  "party3",
+  "party4",
+  "party5"
+}
 local is_played = nil
 local id_handler = nil
 local current_playing = false
@@ -172,6 +268,7 @@ local current_song = {
 }
 local time_now = nil
 local on_battle = false
+local boss_fight = false
 local battle_music, battle_events = CreateFrame("Frame"), {}
 
 battle_music:SetScript("OnEvent", function(self, event, ...)
@@ -179,12 +276,50 @@ battle_music:SetScript("OnEvent", function(self, event, ...)
 end)
 
 function battle_events:PLAYER_REGEN_DISABLED(event)
+  print("PLAYER_REGEN_DISABLED")
   on_battle = true
---  PlaySoundFile("Sound/Creature/Jaraxxus/Cr_Jaraxxus_Aggro01.ogg", 'Dialog')
+  if current_playing == true then
+    if id_handler ~= nil then
+      StopSound(id_handler)
+      current_playing = false
+      current_song.path = nil
+      current_song.duration = 0
+    end
+  end
+  selecting_song()
+end
+
+function battle_events:ENCOUNTER_START(encounterID, name, difficulty, size)
+  print("ENCOUNTER_START ", encounterID, name, difficulty, size)
+  boss_fight = true
+  on_battle = true
+  if current_playing == true then
+    if id_handler ~= nil then
+      StopSound(id_handler)
+      current_playing = false
+      current_song.path = nil
+      current_song.duration = 0
+    end
+  end
   selecting_song()
 end
 
 function battle_events:PLAYER_REGEN_ENABLED(event)
+  print("PLAYER_REGEN_ENABLED")
+  on_battle = false
+  if current_playing == true then
+    if id_handler ~= nil then
+      StopSound(id_handler)
+      current_playing = false
+      current_song.path = nil
+      current_song.duration = 0
+    end
+  end
+end
+
+function battle_events:ENCOUNTER_END(encounterID, name, difficulty, size, success)
+  print("ENCOUNTER_END ", encounterID, name, difficulty, size, success)
+  boss_fight = false
   on_battle = false
   if current_playing == true then
     if id_handler ~= nil then
@@ -205,6 +340,17 @@ function battle_events:UNIT_AURA(unit)
         current_playing = false
         selecting_song()
       end
+    end
+  end
+end
+
+function battle_events:PLAYER_TARGET_CHANGED(typeTriggeredTarget)
+  if on_battle then
+    local time_added = time_now + current_song.duration
+    local time_temp = time()
+    if time_temp >= time_added then
+      current_playing = false
+      selecting_song()
     end
   end
 end
@@ -272,6 +418,50 @@ function selecting_song()
     else
       battle_play_file(song.instance.dazaralor)
     end
+  -- sl dungeon
+  elseif instance_filter(instance.peste_abrumadora.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.peste_abrumadora)
+    else
+      battle_play_file(song.instance.peste_abrumadora)
+    end
+  elseif instance_filter(instance.teatro_dolor.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.teatro_dolor)
+    else
+      battle_play_file(song.instance.teatro_dolor)
+    end
+  elseif instance_filter(instance.destruccion_necrotica.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.destruccion_necrotica)
+    else
+      battle_play_file(song.instance.destruccion_necrotica)
+    end
+  elseif instance_filter(instance.profundidades_sanguineas.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.profundidades_sanguineas)
+    else
+      battle_play_file(song.instance.profundidades_sanguineas)
+    end
+  elseif instance_filter(instance.salones_expiacion.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.salones_expiacion)
+    else
+      battle_play_file(song.instance.salones_expiacion)
+    end
+  elseif instance_filter(instance.torres_ascencion.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.torres_ascencion)
+    else
+      battle_play_file(song.instance.torres_ascencion)
+    end
+  -- sl raid
+  elseif instance_filter(instance.castillo_nathria.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.castillo_nathria)
+    else
+      battle_play_file(song.instance.castillo_nathria)
+    end
 
   elseif is_boss() then
     battle_play_file(song.boss.default_boss)
@@ -282,7 +472,7 @@ function selecting_song()
 end
 
 function instance_filter(instance_id)
-  local _, _name, _instanceType, _difficultyIndex, _difficultyName, _maxPlayers, _dynamicDifficulty, _isDynamic, instanceMapId, _instanceGroupSize = pcall(GetInstanceInfo)
+  local _, _name, _instanceType, _difficultyIndex, _difficultyName, _maxPlayers, _dynamicDifficulty, _isDynamic, instanceMapId, _instanceGroupSize, _LfgDungeonID = pcall(GetInstanceInfo)
   if instance_id == instanceMapId then
     return true
   end
@@ -327,9 +517,25 @@ end
 function is_boss()
   for i = 1, 4 do
     local _, boss_detected = pcall(UnitExists, "boss" .. i)
-    if boss_detected then
+    if ( boss_detected == true or boss_detected == 1 ) then
+      boss_fight = true
       return true
     end
+  end
+  
+  for i = 1, 5 do
+    local _, friend_detected = pcall(UnitExists, friend_units[i])
+    if ( friend_detected == true or friend_detected == 1 ) then
+      local _, type_boss = pcall(UnitClassification, friend_units[i] .. "target")
+      if ( type_boss == "worldboss" ) then
+        boss_fight = true
+        return true
+      end
+    end
+  end
+  
+  if boss_fight == true then
+    return true
   end
 
   return false
