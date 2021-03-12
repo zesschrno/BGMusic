@@ -57,6 +57,18 @@ local song = {
       path = "Interface\\AddOns\\BGMusic\\Koloktos_Moldarach.mp3",
       duration = 161
     },
+    tirna_scithe = {
+      path = "Interface\\AddOns\\BGMusic\\Decisive_Battle_I.mp3",
+      duration = 266
+    },
+    el_otro_lado = {
+      path = "Interface\\AddOns\\BGMusic\\Where_Is_Your_God_Now.mp3",
+      duration = 109
+    },
+    torghast = {
+      path = "Interface\\AddOns\\BGMusic\\therion-blood-of-kingu.mp3",
+      duration = 332
+    },
     -- sl raid
     castillo_nathria = {
       path = "Interface\\AddOns\\BGMusic\\Raid.mp3",
@@ -126,6 +138,18 @@ local song = {
     torres_ascencion = {
       path = "Interface\\AddOns\\BGMusic\\Tempest_of_Seasons_(Rain).mp3",
       duration = 307
+    },
+    tirna_scithe = {
+      path = "Interface\\AddOns\\BGMusic\\Dwellings_of_the_Ancient_Gods_(Thunder).mp3",
+      duration = 317
+    },
+    el_otro_lado = {
+      path = "Interface\\AddOns\\BGMusic\\Tribal_Metal_-_Spirit_War.mp3",
+      duration = 199
+    },
+    torghast = {
+      path = "Interface\\AddOns\\BGMusic\\therion-blood-of-kingu.mp3",
+      duration = 332
     },
     -- sl raid
     castillo_nathria = {
@@ -208,6 +232,15 @@ local instance = {
   },
   torres_ascencion = {
     instanceID = 2285
+  },
+  el_otro_lado = {
+    instanceID = 2291
+  },
+  tirna_scithe = {
+    instanceID = 2290
+  },
+  torghast = {
+    instanceID = 2453
   },
   -- sl raid
   castillo_nathria = {
@@ -454,6 +487,24 @@ function selecting_song()
       battle_play_file(song.boss.torres_ascencion)
     else
       battle_play_file(song.instance.torres_ascencion)
+    end
+  elseif instance_filter(instance.el_otro_lado.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.el_otro_lado)
+    else
+      battle_play_file(song.instance.el_otro_lado)
+    end
+  elseif instance_filter(instance.tirna_scithe.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.tirna_scithe)
+    else
+      battle_play_file(song.instance.tirna_scithe)
+    end
+  elseif instance_filter(instance.torghast.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.torghast)
+    else
+      battle_play_file(song.instance.torghast)
     end
   -- sl raid
   elseif instance_filter(instance.castillo_nathria.instanceID) then
