@@ -32,7 +32,7 @@ local song = {
       duration = 229
     },
     
-    -- sl dungeon
+    -- sl dungeon boss
     teatro_dolor = {
       path = "Interface\\AddOns\\BGMusic\\The_Verge_of_Death_(Rain).mp3",
       duration = 171
@@ -69,13 +69,21 @@ local song = {
       path = "Interface\\AddOns\\BGMusic\\therion-blood-of-kingu.mp3",
       duration = 332
     },
-    -- sl raid
+    tazavesh = {
+      path = "Interface\\AddOns\\BGMusic\\11_Bowsers_Fury.mp3",
+      duration = 232
+    },
+    -- sl raid boss
     castillo_nathria = {
       path = "Interface\\AddOns\\BGMusic\\Raid.mp3",
       duration = 216
+    },
+    sagrario_dominacion = {
+      path = "Interface\\AddOns\\BGMusic\\08_minos.mp3",
+      duration = 116
     },    
 
-    --bfa dungeon
+    --bfa dungeon boss
     mansion_tarjasenda = {
       path = "Interface\\AddOns\\BGMusic\\song(xepher).mp3",
       duration = 216
@@ -101,7 +109,7 @@ local song = {
       duration = 153
     },
     
-    --bfa raid
+    --bfa raid boss
     dazaralor = {
       path = "Interface\\AddOns\\BGMusic\\full_circle.mp3",
       duration = 85
@@ -151,11 +159,19 @@ local song = {
       path = "Interface\\AddOns\\BGMusic\\therion-blood-of-kingu.mp3",
       duration = 332
     },
+    tazavesh = {
+      path = "Interface\\AddOns\\BGMusic\\Aruh_Metal_Slug_X_Judgement.mp3",
+      duration = 162
+    },
     -- sl raid
     castillo_nathria = {
       path = "Interface\\AddOns\\BGMusic\\At_What_Cost_(Rain).mp3",
       duration = 349
     },
+    sagrario_dominacion = {
+      path = "Interface\\AddOns\\BGMusic\\04_dante_casarma_treloch.mp3",
+      duration = 88
+    }, 
   
     -- bfa dungeon
     mansion_tarjasenda = {
@@ -240,11 +256,17 @@ local instance = {
     instanceID = 2290
   },
   torghast = {
-    instanceID = 2453
+    instanceID = 2162
+  },
+  tazavesh = {
+    instanceID = 2441
   },
   -- sl raid
   castillo_nathria = {
     instanceID = 2296
+  },
+  sagrario_dominacion = {
+    instanceID = 2450
   },
   
   -- bfa dungeon
@@ -506,12 +528,24 @@ function selecting_song()
     else
       battle_play_file(song.instance.torghast)
     end
+  elseif instance_filter(instance.tazavesh.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.tazavesh)
+    else
+      battle_play_file(song.instance.tazavesh)
+    end
   -- sl raid
   elseif instance_filter(instance.castillo_nathria.instanceID) then
     if is_boss() then
       battle_play_file(song.boss.castillo_nathria)
     else
       battle_play_file(song.instance.castillo_nathria)
+    end
+  elseif instance_filter(instance.sagrario_dominacion.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.sagrario_dominacion)
+    else
+      battle_play_file(song.instance.sagrario_dominacion)
     end
 
   elseif is_boss() then

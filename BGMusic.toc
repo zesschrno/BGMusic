@@ -1,7 +1,7 @@
-## Interface: 90005
+## Interface: 90100
 ## Title: BGMusic
 ## Author: Zesschrno
-## Version: 3.2
+## Version: 3.3
 ## LoadOnDemand: 0
 ## DefaultState: enabled
 
