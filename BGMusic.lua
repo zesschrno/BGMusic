@@ -6,59 +6,71 @@ local song = {
   boss = {
     -- sl single raid boss
     guardian_vigilante = {
-      path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
-      duration = 103
+      path = "Interface\\AddOns\\BGMusic\\VS_Vorash.ogg",
+      duration = 319
     },
     dausegne_oraculo_caida = {
-      path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
-      duration = 103
+      path = "Interface\\AddOns\\BGMusic\\Maximum_Corruption.ogg",
+      duration = 371
     },
     artificiero_xymox = {
-      path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
-      duration = 103
+      path = "Interface\\AddOns\\BGMusic\\Nightmare_DoReMi.ogg",
+      duration = 313
     },
     panteon_prototipo = {
-      path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
-      duration = 103
+      path = "Interface\\AddOns\\BGMusic\\Claude_endgame.ogg",
+      duration = 480
     },
     skolex_devorador_insaciable = {
-      path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
-      duration = 103
+      path = "Interface\\AddOns\\BGMusic\\VS_Vorash.ogg",
+      duration = 319
     },
     halondrus_recolector = {
-      path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
-      duration = 103
+      path = "Interface\\AddOns\\BGMusic\\VS_Vorash.ogg",
+      duration = 319
     },
     lihuvim_arquitecto_principal = {
-      path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
-      duration = 103
+      path = "Interface\\AddOns\\BGMusic\\Nightmare_DoReMi.ogg",
+      duration = 313
     },
     anduin_wrynn = {
-      path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
-      duration = 103
+      path = "Interface\\AddOns\\BGMusic\\THE_RUMBLING.ogg",
+      duration = 348
     },
     senyores_terror = {
-      path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
-      duration = 103
+      path = "Interface\\AddOns\\BGMusic\\Insidious.ogg",
+      duration = 342
     },
     rygelon = {
-      path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
-      duration = 103
+      path = "Interface\\AddOns\\BGMusic\\The_Greatest_Jubilee_LaMi.ogg",
+      duration = 420
     },
     carcelero = {
-      path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
-      duration = 103
-    },
-    -- sl single dungeon boss
-    soleah = {
-      path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
-      duration = 103
-    },
-    capitana_colagarfio = {
-      path = "Interface\\AddOns\\BGMusic\\Lets_Battle_Mix.mp3",
-      duration = 245
+      path = "Interface\\AddOns\\BGMusic\\Apex_of_the_world.ogg",
+      duration = 525
     },
     
+    -- sl single dungeon boss
+    oasis_myza = {
+      path = "Interface\\AddOns\\BGMusic\\WILDSIDE.ogg",
+      duration = 227
+    },
+    soazmi = {
+      path = "Interface\\AddOns\\BGMusic\\Showdown_With_Fury_Bowser.ogg",
+      duration = 192
+    },
+    hylbrande = {
+      path = "Interface\\AddOns\\BGMusic\\Showdown_With_Fury_Bowser.ogg",
+      duration = 192
+    },
+    capitana_colagarfio = {
+      path = "Interface\\AddOns\\BGMusic\\Showdown_With_Fury_Bowser.ogg",
+      duration = 192
+    },
+    soleah = {
+      path = "Interface\\AddOns\\BGMusic\\Beyond_Time.ogg",
+      duration = 392
+    },
 
     -- bfa single raid boss 
     jaina = {
@@ -214,12 +226,12 @@ local song = {
       duration = 307
     },
     tirna_scithe = {
-      path = "Interface\\AddOns\\BGMusic\\Dwellings_of_the_Ancient_Gods_(Thunder).mp3",
-      duration = 317
+      path = "Interface\\AddOns\\BGMusic\\Dwellings_of_the_Ancient_Gods.ogg",
+      duration = 296
     },
     el_otro_lado = {
-      path = "Interface\\AddOns\\BGMusic\\Tribal_Metal_-_Spirit_War.mp3",
-      duration = 199
+      path = "Interface\\AddOns\\BGMusic\\Adrian_von_Ziegler_-_Spirit_War.ogg",
+      duration = 198
     },
     torghast = {
       path = "Interface\\AddOns\\BGMusic\\therion-blood-of-kingu.mp3",
@@ -239,8 +251,8 @@ local song = {
       duration = 88
     }, 
     sepulcro_primeros = {
-      path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
-      duration = 103
+      path = "Interface\\AddOns\\BGMusic\\VS_Serris_-_Metroid_Dread.ogg",
+      duration = 241
     },
   
     -- bfa dungeon
@@ -330,6 +342,18 @@ local boss = {
   capitana_colagarfio = {
     npc_id = 175546,
     encounterID = 2419
+  },
+  hylbrande = {
+    npc_id = 175663,
+    encounterID = 2426
+  },
+  soazmi = {
+    npc_id = 175806,
+    encounterID = 2437
+  },
+  oasis_myza = {
+    npc_id = 176564,
+    encounterID = 2440
   },
 
   -- bfa raid boss
@@ -585,6 +609,12 @@ function selecting_song()
     battle_play_file(song.boss.carcelero)
   
   -- sl dungeon boss
+  elseif boss_filter(boss.oasis_myza) then
+    battle_play_file(song.boss.oasis_myza)
+  elseif boss_filter(boss.soazmi) then
+    battle_play_file(song.boss.soazmi)
+  elseif boss_filter(boss.hylbrande) then
+    battle_play_file(song.boss.hylbrande)
   elseif boss_filter(boss.capitana_colagarfio) then
     battle_play_file(song.boss.capitana_colagarfio)
   elseif boss_filter(boss.soleah) then
