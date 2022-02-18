@@ -157,8 +157,8 @@ local song = {
       duration = 116
     },
     sepulcro_primeros = {
-      path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
-      duration = 103
+      path = "Interface\\AddOns\\BGMusic\\VS_Vorash.ogg",
+      duration = 319
     },
 
     --bfa dungeon boss
@@ -241,6 +241,7 @@ local song = {
       path = "Interface\\AddOns\\BGMusic\\Aruh_Metal_Slug_X_Judgement.mp3",
       duration = 162
     },
+    
     -- sl raid
     castillo_nathria = {
       path = "Interface\\AddOns\\BGMusic\\At_What_Cost_(Rain).mp3",
@@ -280,6 +281,7 @@ local song = {
       path = "Interface\\AddOns\\BGMusic\\windowless_building.mp3",
       duration = 260
     },
+    
     -- bfa raid
     dazaralor = {
       path = "Interface\\AddOns\\BGMusic\\battle_lusamine.mp3",
@@ -334,6 +336,7 @@ local boss = {
     npc_id = 185421,
     encounterID = 2537
   },
+  
   -- sl single dungeon boss
   soleah = {
     npc_id = 180863,
@@ -423,6 +426,7 @@ local instance = {
   tazavesh = {
     instanceID = 2441
   },
+  
   -- sl raid
   castillo_nathria = {
     instanceID = 2296
@@ -462,6 +466,7 @@ local instance = {
   mansion_tarjasenda = {
     instanceID = 1862
   },
+  
   -- bfa raid
   uldir = {
     instanceID = 1861
@@ -713,6 +718,12 @@ function selecting_song()
       battle_play_file(song.boss.sagrario_dominacion)
     else
       battle_play_file(song.instance.sagrario_dominacion)
+    end
+  elseif instance_filter(instance.sepulcro_primeros.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.sepulcro_primeros)
+    else
+      battle_play_file(song.instance.sepulcro_primeros)
     end
   
   -- bfa raid
