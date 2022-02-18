@@ -4,7 +4,87 @@ local song = {
     duration = 131
   },
   boss = {
-    -- legion boss
+    -- sl single raid boss
+    guardian_vigilante = {
+      path = "Interface\\AddOns\\BGMusic\\VS_Vorash.ogg",
+      duration = 319
+    },
+    dausegne_oraculo_caida = {
+      path = "Interface\\AddOns\\BGMusic\\Maximum_Corruption.ogg",
+      duration = 371
+    },
+    artificiero_xymox = {
+      path = "Interface\\AddOns\\BGMusic\\Nightmare_DoReMi.ogg",
+      duration = 313
+    },
+    panteon_prototipo = {
+      path = "Interface\\AddOns\\BGMusic\\Claude_endgame.ogg",
+      duration = 480
+    },
+    skolex_devorador_insaciable = {
+      path = "Interface\\AddOns\\BGMusic\\VS_Vorash.ogg",
+      duration = 319
+    },
+    halondrus_recolector = {
+      path = "Interface\\AddOns\\BGMusic\\VS_Vorash.ogg",
+      duration = 319
+    },
+    lihuvim_arquitecto_principal = {
+      path = "Interface\\AddOns\\BGMusic\\Nightmare_DoReMi.ogg",
+      duration = 313
+    },
+    anduin_wrynn = {
+      path = "Interface\\AddOns\\BGMusic\\THE_RUMBLING.ogg",
+      duration = 348
+    },
+    senyores_terror = {
+      path = "Interface\\AddOns\\BGMusic\\Insidious.ogg",
+      duration = 342
+    },
+    rygelon = {
+      path = "Interface\\AddOns\\BGMusic\\The_Greatest_Jubilee_LaMi.ogg",
+      duration = 420
+    },
+    carcelero = {
+      path = "Interface\\AddOns\\BGMusic\\Apex_of_the_world.ogg",
+      duration = 525
+    },
+    
+    -- sl single dungeon boss
+    oasis_myza = {
+      path = "Interface\\AddOns\\BGMusic\\WILDSIDE.ogg",
+      duration = 227
+    },
+    soazmi = {
+      path = "Interface\\AddOns\\BGMusic\\Showdown_With_Fury_Bowser.ogg",
+      duration = 192
+    },
+    hylbrande = {
+      path = "Interface\\AddOns\\BGMusic\\Showdown_With_Fury_Bowser.ogg",
+      duration = 192
+    },
+    capitana_colagarfio = {
+      path = "Interface\\AddOns\\BGMusic\\Showdown_With_Fury_Bowser.ogg",
+      duration = 192
+    },
+    soleah = {
+      path = "Interface\\AddOns\\BGMusic\\Beyond_Time.ogg",
+      duration = 392
+    },
+
+    -- bfa single raid boss 
+    jaina = {
+      path = "Interface\\AddOns\\BGMusic\\Let-It-Go-Winter.mp3",
+      duration = 229
+    },
+    
+    -- bfa single dungeon boss
+    sethraliss = {
+      path = "Interface\\AddOns\\BGMusic\\bioinformatics.mp3",
+      duration = 128
+    },
+    
+    -- legion single dungeon boss
     archidruida_glaidalis = {
       path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
       duration = 139
@@ -24,12 +104,6 @@ local song = {
     cordana = {
       path = "Interface\\AddOns\\BGMusic\\moon_river.mp3",
       duration = 510
-    },
-    
-    -- bfa raid boss 
-    jaina = {
-      path = "Interface\\AddOns\\BGMusic\\Let-It-Go-Winter.mp3",
-      duration = 229
     },
     
     -- sl dungeon boss
@@ -81,7 +155,11 @@ local song = {
     sagrario_dominacion = {
       path = "Interface\\AddOns\\BGMusic\\08_minos.mp3",
       duration = 116
-    },    
+    },
+    sepulcro_primeros = {
+      path = "Interface\\AddOns\\BGMusic\\VS_Vorash.ogg",
+      duration = 319
+    },
 
     --bfa dungeon boss
     mansion_tarjasenda = {
@@ -148,12 +226,12 @@ local song = {
       duration = 307
     },
     tirna_scithe = {
-      path = "Interface\\AddOns\\BGMusic\\Dwellings_of_the_Ancient_Gods_(Thunder).mp3",
-      duration = 317
+      path = "Interface\\AddOns\\BGMusic\\Dwellings_of_the_Ancient_Gods.ogg",
+      duration = 296
     },
     el_otro_lado = {
-      path = "Interface\\AddOns\\BGMusic\\Tribal_Metal_-_Spirit_War.mp3",
-      duration = 199
+      path = "Interface\\AddOns\\BGMusic\\Adrian_von_Ziegler_-_Spirit_War.ogg",
+      duration = 198
     },
     torghast = {
       path = "Interface\\AddOns\\BGMusic\\therion-blood-of-kingu.mp3",
@@ -163,6 +241,7 @@ local song = {
       path = "Interface\\AddOns\\BGMusic\\Aruh_Metal_Slug_X_Judgement.mp3",
       duration = 162
     },
+    
     -- sl raid
     castillo_nathria = {
       path = "Interface\\AddOns\\BGMusic\\At_What_Cost_(Rain).mp3",
@@ -172,6 +251,10 @@ local song = {
       path = "Interface\\AddOns\\BGMusic\\04_dante_casarma_treloch.mp3",
       duration = 88
     }, 
+    sepulcro_primeros = {
+      path = "Interface\\AddOns\\BGMusic\\VS_Serris_-_Metroid_Dread.ogg",
+      duration = 241
+    },
   
     -- bfa dungeon
     mansion_tarjasenda = {
@@ -198,6 +281,7 @@ local song = {
       path = "Interface\\AddOns\\BGMusic\\windowless_building.mp3",
       duration = 260
     },
+    
     -- bfa raid
     dazaralor = {
       path = "Interface\\AddOns\\BGMusic\\battle_lusamine.mp3",
@@ -207,25 +291,106 @@ local song = {
 }
 
 local boss = {
-  cordana = {
-    npc_id = 95888
+  -- sl single raid boss
+  guardian_vigilante = {
+    npc_id = 180773,
+    encounterID = 2512
   },
-  archidruida_glaidalis = {
-    npc_id = 96512
+  dausegne_oraculo_caida = {
+    npc_id = 181224,
+    encounterID = 2540
   },
-  corazon_de_roble = {
-    npc_id = 103344
+  artificiero_xymox = {
+    npc_id = 183501,
+    encounterID = 2553
   },
-  dresaron = {
-    npc_id = 99200
+  panteon_prototipo = {
+    npc_id = 181549,
+    encounterID = 2544
   },
-  sombra_de_xavius = {
-    npc_id = 99192
+  skolex_devorador_insaciable = {
+    npc_id = 183937,
+    encounterID = 2542
+  },
+  halondrus_recolector = {
+    npc_id = 184915,
+    encounterID = 2529
+  },
+  lihuvim_arquitecto_principal = {
+    npc_id = 182169,
+    encounterID = 2539
+  },
+  anduin_wrynn = {
+    npc_id = 181954,
+    encounterID = 2546
+  },
+  senyores_terror = {
+    npc_id = 26533,
+    encounterID = 2543
+  },
+  rygelon = {
+    npc_id = 182777,
+    encounterID = 2549
+  },
+  carcelero = {
+    npc_id = 185421,
+    encounterID = 2537
   },
   
+  -- sl single dungeon boss
+  soleah = {
+    npc_id = 180863,
+    encounterID = 2442
+  },
+  capitana_colagarfio = {
+    npc_id = 175546,
+    encounterID = 2419
+  },
+  hylbrande = {
+    npc_id = 175663,
+    encounterID = 2426
+  },
+  soazmi = {
+    npc_id = 175806,
+    encounterID = 2437
+  },
+  oasis_myza = {
+    npc_id = 176564,
+    encounterID = 2440
+  },
+
   -- bfa raid boss
   jaina = {
-    npc_id = 149684
+    npc_id = 149684,
+    encounterID = 2281
+  },
+  
+  -- bfa dungeon boss
+  sethraliss = {
+    npc_id = 133392,
+    encounterID = 2127
+  },
+  
+  -- legion dungeon boss
+  cordana = {
+    npc_id = 95888,
+    encounterID = 1818
+  },
+  archidruida_glaidalis = {
+    npc_id = 96512,
+    encounterID = 1836
+  },
+  corazon_de_roble = {
+    npc_id = 103344,
+    encounterID = 1837
+  },
+  dresaron = {
+    npc_id = 99200,
+    encounterID = 1838
+  },
+  sombra_de_xavius = {
+    npc_id = 99192,
+    encounterID = 1839
   }
 }
 
@@ -261,12 +426,16 @@ local instance = {
   tazavesh = {
     instanceID = 2441
   },
+  
   -- sl raid
   castillo_nathria = {
     instanceID = 2296
   },
   sagrario_dominacion = {
     instanceID = 2450
+  },
+  sepulcro_primeros = {
+    instanceID = 2481
   },
   
   -- bfa dungeon
@@ -297,6 +466,7 @@ local instance = {
   mansion_tarjasenda = {
     instanceID = 1862
   },
+  
   -- bfa raid
   uldir = {
     instanceID = 1861
@@ -324,6 +494,7 @@ local current_song = {
 local time_now = nil
 local on_battle = false
 local boss_fight = false
+local id_fight_encounter = nil
 local battle_music, battle_events = CreateFrame("Frame"), {}
 
 battle_music:SetScript("OnEvent", function(self, event, ...)
@@ -348,6 +519,7 @@ function battle_events:ENCOUNTER_START(encounterID, name, difficulty, size)
   print("ENCOUNTER_START ", encounterID, name, difficulty, size)
   boss_fight = true
   on_battle = true
+  id_fight_encounter = tonumber(encounterID)
   if current_playing == true then
     if id_handler ~= nil then
       StopSound(id_handler)
@@ -362,6 +534,7 @@ end
 function battle_events:PLAYER_REGEN_ENABLED(event)
   print("PLAYER_REGEN_ENABLED")
   on_battle = false
+  id_fight_encounter = nil
   if current_playing == true then
     if id_handler ~= nil then
       StopSound(id_handler)
@@ -376,6 +549,7 @@ function battle_events:ENCOUNTER_END(encounterID, name, difficulty, size, succes
   print("ENCOUNTER_END ", encounterID, name, difficulty, size, success)
   boss_fight = false
   on_battle = false
+  id_fight_encounter = nil
   if current_playing == true then
     if id_handler ~= nil then
       StopSound(id_handler)
@@ -413,66 +587,64 @@ end
 -- UNIT_SPELLCAST_START
 
 function selecting_song()
-  -- legion boss
-  if boss_filter(boss.cordana.npc_id) then
-    battle_play_file(song.boss.cordana)
-  elseif boss_filter(boss.archidruida_glaidalis.npc_id) then
-    battle_play_file(song.boss.archidruida_glaidalis)
-  elseif boss_filter(boss.corazon_de_roble.npc_id) then
-    battle_play_file(song.boss.corazon_de_roble)
-  elseif boss_filter(boss.dresaron.npc_id) then
-    battle_play_file(song.boss.dresaron)
-  elseif boss_filter(boss.sombra_de_xavius.npc_id) then
-    battle_play_file(song.boss.sombra_de_xavius)
-   
+  if false then
+  
+  -- sl raid boss
+  elseif boss_filter(boss.guardian_vigilante) then
+    battle_play_file(song.boss.guardian_vigilante)
+  elseif boss_filter(boss.dausegne_oraculo_caida) then
+    battle_play_file(song.boss.dausegne_oraculo_caida)
+  elseif boss_filter(boss.artificiero_xymox) then
+    battle_play_file(song.boss.artificiero_xymox)
+  elseif boss_filter(boss.panteon_prototipo) then
+    battle_play_file(song.boss.panteon_prototipo)
+  elseif boss_filter(boss.skolex_devorador_insaciable) then
+    battle_play_file(song.boss.skolex_devorador_insaciable)
+  elseif boss_filter(boss.halondrus_recolector) then
+    battle_play_file(song.boss.halondrus_recolector)
+  elseif boss_filter(boss.lihuvim_arquitecto_principal) then
+    battle_play_file(song.boss.lihuvim_arquitecto_principal)
+  elseif boss_filter(boss.anduin_wrynn) then
+    battle_play_file(song.boss.anduin_wrynn)
+  elseif boss_filter(boss.senyores_terror) then
+    battle_play_file(song.boss.senyores_terror)
+  elseif boss_filter(boss.rygelon) then
+    battle_play_file(song.boss.rygelon)
+  elseif boss_filter(boss.carcelero) then
+    battle_play_file(song.boss.carcelero)
+  
+  -- sl dungeon boss
+  elseif boss_filter(boss.oasis_myza) then
+    battle_play_file(song.boss.oasis_myza)
+  elseif boss_filter(boss.soazmi) then
+    battle_play_file(song.boss.soazmi)
+  elseif boss_filter(boss.hylbrande) then
+    battle_play_file(song.boss.hylbrande)
+  elseif boss_filter(boss.capitana_colagarfio) then
+    battle_play_file(song.boss.capitana_colagarfio)
+  elseif boss_filter(boss.soleah) then
+    battle_play_file(song.boss.soleah)
+  
   -- bfa raid boss
-  elseif boss_filter(boss.jaina.npc_id) then
+  elseif boss_filter(boss.jaina) then
     battle_play_file(song.boss.jaina)
-
-  -- bfa dungeon
-  elseif instance_filter(instance.mansion_tarjasenda.instanceID) then
-    if is_boss() then
-      battle_play_file(song.boss.mansion_tarjasenda)
-    else
-      battle_play_file(song.instance.mansion_tarjasenda)
-    end
-  elseif instance_filter(instance.filon.instanceID) then
-    if is_boss() then
-      battle_play_file(song.boss.filon)
-    else
-      battle_play_file(song.instance.filon)
-    end
-  elseif instance_filter(instance.templo_sethraliss.instanceID) then
-    if is_boss() then
-      battle_play_file(song.boss.templo_sethraliss)
-    else
-      battle_play_file(song.instance.templo_sethraliss)
-    end
-  elseif instance_filter(instance.bardoma.instanceID) then
-    if is_boss() then
-      battle_play_file(song.boss.bardoma)
-    else
-      battle_play_file(song.instance.bardoma)
-    end
-  elseif instance_filter(instance.puerto_libre.instanceID) then
-    if is_boss() then
-      battle_play_file(song.boss.puerto_libre)
-    else
-      battle_play_file(song.instance.puerto_libre)
-    end
-  elseif instance_filter(instance.santuario_tormenta.instanceID) then
-    if is_boss() then
-      battle_play_file(song.boss.santuario_tormenta)
-    else
-      battle_play_file(song.instance.santuario_tormenta)
-    end
-  -- bfa raid
-  elseif instance_filter(instance.dazaralor.instanceID) then
-    if is_boss() then
-      battle_play_file(song.boss.dazaralor)
-    else
-      battle_play_file(song.instance.dazaralor)
-    end
+  
+  -- bfa dungeon boss
+  elseif boss_filter(boss.sethraliss) then
+    battle_play_file(song.boss.sethraliss)
+  
+  -- legion dungeon boss
+  elseif boss_filter(boss.cordana) then
+    battle_play_file(song.boss.cordana)
+  elseif boss_filter(boss.archidruida_glaidalis) then
+    battle_play_file(song.boss.archidruida_glaidalis)
+  elseif boss_filter(boss.corazon_de_roble) then
+    battle_play_file(song.boss.corazon_de_roble)
+  elseif boss_filter(boss.dresaron) then
+    battle_play_file(song.boss.dresaron)
+  elseif boss_filter(boss.sombra_de_xavius) then
+    battle_play_file(song.boss.sombra_de_xavius)
+  
   -- sl dungeon
   elseif instance_filter(instance.peste_abrumadora.instanceID) then
     if is_boss() then
@@ -547,6 +719,58 @@ function selecting_song()
     else
       battle_play_file(song.instance.sagrario_dominacion)
     end
+  elseif instance_filter(instance.sepulcro_primeros.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.sepulcro_primeros)
+    else
+      battle_play_file(song.instance.sepulcro_primeros)
+    end
+  
+  -- bfa raid
+  elseif instance_filter(instance.dazaralor.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.dazaralor)
+    else
+      battle_play_file(song.instance.dazaralor)
+    end
+
+  -- bfa dungeon
+  elseif instance_filter(instance.mansion_tarjasenda.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.mansion_tarjasenda)
+    else
+      battle_play_file(song.instance.mansion_tarjasenda)
+    end
+  elseif instance_filter(instance.filon.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.filon)
+    else
+      battle_play_file(song.instance.filon)
+    end
+  elseif instance_filter(instance.templo_sethraliss.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.templo_sethraliss)
+    else
+      battle_play_file(song.instance.templo_sethraliss)
+    end
+  elseif instance_filter(instance.bardoma.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.bardoma)
+    else
+      battle_play_file(song.instance.bardoma)
+    end
+  elseif instance_filter(instance.puerto_libre.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.puerto_libre)
+    else
+      battle_play_file(song.instance.puerto_libre)
+    end
+  elseif instance_filter(instance.santuario_tormenta.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.santuario_tormenta)
+    else
+      battle_play_file(song.instance.santuario_tormenta)
+    end  
 
   elseif is_boss() then
     battle_play_file(song.boss.default_boss)
@@ -564,7 +788,14 @@ function instance_filter(instance_id)
   return false
 end
 
-function boss_filter(boss_id)
+function boss_filter(boss_npc)
+  local boss_id = boss_npc.npc_id
+  local boss_encounter_id = boss_npc.encounterID
+  
+  if boss_encounter_id == id_fight_encounter then
+    return true
+  end
+  
   for i = 1, 4 do
     local _, guid = pcall(UnitGUID, "boss" .. i)
     if guid ~= nil then
