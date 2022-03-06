@@ -6,7 +6,7 @@ local song = {
   boss = {
     -- sl single raid boss
     guardian_vigilante = {
-      path = "Interface\\AddOns\\BGMusic\\VS_Vorash.ogg",
+      path = "Interface\\AddOns\\BGMusic\\Vorash_v3.ogg",
       duration = 319
     },
     dausegne_oraculo_caida = {
@@ -14,7 +14,7 @@ local song = {
       duration = 371
     },
     artificiero_xymox = {
-      path = "Interface\\AddOns\\BGMusic\\Nightmare_DoReMi.ogg",
+      path = "Interface\\AddOns\\BGMusic\\Nightmare_DoReMi_v2.ogg",
       duration = 313
     },
     panteon_prototipo = {
@@ -22,15 +22,15 @@ local song = {
       duration = 480
     },
     skolex_devorador_insaciable = {
-      path = "Interface\\AddOns\\BGMusic\\VS_Vorash.ogg",
+      path = "Interface\\AddOns\\BGMusic\\Vorash_v3.ogg",
       duration = 319
     },
     halondrus_recolector = {
-      path = "Interface\\AddOns\\BGMusic\\VS_Vorash.ogg",
+      path = "Interface\\AddOns\\BGMusic\\Vorash_v3.ogg",
       duration = 319
     },
     lihuvim_arquitecto_principal = {
-      path = "Interface\\AddOns\\BGMusic\\Nightmare_DoReMi.ogg",
+      path = "Interface\\AddOns\\BGMusic\\Nightmare_DoReMi_v2.ogg",
       duration = 313
     },
     anduin_wrynn = {
@@ -157,7 +157,7 @@ local song = {
       duration = 116
     },
     sepulcro_primeros = {
-      path = "Interface\\AddOns\\BGMusic\\VS_Vorash.ogg",
+      path = "Interface\\AddOns\\BGMusic\\Vorash_v3.ogg",
       duration = 319
     },
 
