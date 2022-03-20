@@ -6,8 +6,8 @@ local song = {
   boss = {
     -- sl single raid boss
     guardian_vigilante = {
-      path = "Interface\\AddOns\\BGMusic\\Vorash_v3.ogg",
-      duration = 319
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
     },
     dausegne_oraculo_caida = {
       path = "Interface\\AddOns\\BGMusic\\Maximum_Corruption.ogg",
@@ -22,12 +22,12 @@ local song = {
       duration = 480
     },
     skolex_devorador_insaciable = {
-      path = "Interface\\AddOns\\BGMusic\\Vorash_v3.ogg",
-      duration = 319
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
     },
     halondrus_recolector = {
-      path = "Interface\\AddOns\\BGMusic\\Vorash_v3.ogg",
-      duration = 319
+      path = "Interface\\AddOns\\BGMusic\\Rules_of_Nature.ogg",
+      duration = 458
     },
     lihuvim_arquitecto_principal = {
       path = "Interface\\AddOns\\BGMusic\\Nightmare_DoReMi_v2.ogg",
@@ -157,8 +157,8 @@ local song = {
       duration = 116
     },
     sepulcro_primeros = {
-      path = "Interface\\AddOns\\BGMusic\\Vorash_v3.ogg",
-      duration = 319
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
     },
 
     --bfa dungeon boss
@@ -859,7 +859,7 @@ end
 
 function battle_play_file(song)
   if current_playing == false then
-    is_played, id_handler = PlaySoundFile(song.path, "Ambience")
+    is_played, id_handler = PlaySoundFile(song.path, "Music")
     if is_played ~= true then
       id_handler = nil
     else
