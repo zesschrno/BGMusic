@@ -4,6 +4,177 @@ local song = {
     duration = 131
   },
   boss = {
+    -- df sigle raid boss
+    eranog = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    consejo_primigenio = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    sennarth_aliento_gelido = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    kurog_totem_siniestro = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    raszageth_devoratormentas = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    vigilante_diurna = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    dathea_ascendida = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    terros = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    -- df single dungeon boss
+    
+    leymor = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    telash_vientogris = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    umbrelskul = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    hojazur = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    
+    balakar_khan = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    teera_y_maruuk = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    la_tempestad_iracunda = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    granyth = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    
+    colmimagma = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    senyora_guerra_sargha = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    maestro_forja_gorek = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    magmat_azote_escamas = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    
+    tiravisceras = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    faucefronda = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    matriarca_descomposición_ojofurioso = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    banda_guerra_hachagarra = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    
+    kokia_pezunya_ardiente = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    melidrussa_tejescarcha = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    kyrakka_y_erkhart_sangre_tormentosa = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    
+    vexamus = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    anciano_sin_podar = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    graznat = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    eco_de_doragosa = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    
+    vigia_irideus = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    goliat_tragon = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    khajin_la_implacable = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    tsunami_primigenio = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    
+    enanos_desaparecidos = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    bromach = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    centinela_talondras = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    emberon = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    cronolord_deios = {
+      path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
+      duration = 336
+    },
+    
     -- sl single raid boss
     guardian_vigilante = {
       path = "Interface\\AddOns\\BGMusic\\vorash_smash.ogg",
@@ -85,6 +256,11 @@ local song = {
     },
     
     -- legion single dungeon boss
+    cordana = {
+      path = "Interface\\AddOns\\BGMusic\\moon_river.mp3",
+      duration = 510
+    },
+    
     archidruida_glaidalis = {
       path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
       duration = 139
@@ -101,11 +277,41 @@ local song = {
       path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
       duration = 139
     },
-    cordana = {
-      path = "Interface\\AddOns\\BGMusic\\moon_river.mp3",
-      duration = 510
-    },
     
+    -- df dungeon boss
+    boveda_azur = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    ataque_nokhud = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    neltharus = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    hondonada_frondacuero = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    estanques_vida_rubi = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    academia_algethar = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    salas_de_infusion = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    -- df raid boss
+    boveda_encarnaciones = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
     -- sl dungeon boss
     teatro_dolor = {
       path = "Interface\\AddOns\\BGMusic\\The_Verge_of_Death_(Rain).mp3",
@@ -200,6 +406,41 @@ local song = {
     }
   },
   instance = {
+    -- df dungeon
+    boveda_azur = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    ataque_nokhud = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    neltharus = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    hondonada_frondacuero = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    estanques_vida_rubi = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    academia_algethar = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    salas_de_infusion = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    -- df raid
+    boveda_encarnaciones = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    
     -- sl dungeon
     teatro_dolor = {
       path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
@@ -291,6 +532,177 @@ local song = {
 }
 
 local boss = {
+  -- df single raid boss
+  eranog = {
+    npc_id = 184972,
+    encounterID = 2587
+  },
+  consejo_primigenio = {
+    npc_id = 187771,
+    encounterID = 2590
+  },
+  sennarth_aliento_gelido = {
+    npc_id = 187771,
+    encounterID = 2592
+  },
+  kurog_totem_siniestro = {
+    npc_id = 184686,
+    encounterID = 2605
+  },
+  raszageth_devoratormentas = {
+    npc_id = 187771,
+    encounterID = 2607
+  },
+  vigilante_diurna = {
+    npc_id = 190245,
+    encounterID = 2614
+  },
+  dathea_ascendida = {
+    npc_id = 189813,
+    encounterID = 2635
+  },
+  terros = {
+    npc_id = 190496,
+    encounterID = 2639
+  },
+
+  -- df single dungeon boss
+  leymor = {
+    npc_id = 186644,
+    encounterID = 2582
+  },
+  telash_vientogris = {
+    npc_id = 197025,
+    encounterID = 2583
+  },
+  umbrelskul = {
+    npc_id = 186738,
+    encounterID = 2584
+  },
+  hojazur = {
+    npc_id = 186739,
+    encounterID = 2585
+  },
+
+  balakar_khan = {
+    npc_id = 186151,
+    encounterID = 2580
+  },
+  teera_y_maruuk = {
+    npc_id = 195723,
+    encounterID = 2581
+  },
+  la_tempestad_iracunda = {
+    npc_id = 186615,
+    encounterID = 2636
+  },
+  granyth = {
+    npc_id = 186616,
+    encounterID = 2637
+  },
+
+  colmimagma = {
+    npc_id = 181861,
+    encounterID = 2610
+  },
+  senyora_guerra_sargha = {
+    npc_id = 189901,
+    encounterID = 2611
+  },
+  maestro_forja_gorek = {
+    npc_id = 189478,
+    encounterID = 2612
+  },
+  magmat_azote_escamas = {
+    npc_id = 189340,
+    encounterID = 2613
+  },
+
+  tiravisceras = {
+    npc_id = 186116,
+    encounterID = 2567
+  },
+  faucefronda = {
+    npc_id = 186120,
+    encounterID = 2568
+  },
+  matriarca_descomposición_ojofurioso = {
+    npc_id = 186121,
+    encounterID = 2569
+  },
+  banda_guerra_hachagarra = {
+    npc_id = 186122,
+    encounterID = 2570
+  },
+
+  kokia_pezunya_ardiente = {
+    npc_id = 189232,
+    encounterID = 2606
+  },
+  melidrussa_tejescarcha = {
+    npc_id = 188252,
+    encounterID = 2609
+  },
+  kyrakka_y_erkhart_sangre_tormentosa = {
+    npc_id = 193435,
+    encounterID = 2623
+  },
+
+  vexamus = {
+    npc_id = 194181,
+    encounterID = 2562
+  },
+  anciano_sin_podar = {
+    npc_id = 196482,
+    encounterID = 2563
+  },
+  graznat = {
+    npc_id = 191736,
+    encounterID = 2564
+  },
+  eco_de_doragosa = {
+    npc_id = 190609,
+    encounterID = 2565
+  },
+
+  vigia_irideus = {
+    npc_id = 189719,
+    encounterID = 2615
+  },
+  goliat_tragon = {
+    npc_id = 195399,
+    encounterID = 2616
+  },
+  khajin_la_implacable = {
+    npc_id = 189727,
+    encounterID = 2617
+  },
+  tsunami_primigenio = {
+    npc_id = 189729,
+    encounterID = 2618
+  },
+
+  enanos_desaparecidos = {
+    npc_id = 6906,
+    encounterID = 2555
+  },
+  bromach = {
+    npc_id = 184018,
+    encounterID = 2556
+  },
+  centinela_talondras = {
+    npc_id = 184124,
+    encounterID = 2557
+  },
+  emberon = {
+    npc_id = 184422,
+    encounterID = 2558
+  },
+  cronolord_deios = {
+    npc_id = 184125,
+    encounterID = 2559
+  },
+
   -- sl single raid boss
   guardian_vigilante = {
     npc_id = 180773,
@@ -336,7 +748,7 @@ local boss = {
     npc_id = 185421,
     encounterID = 2537
   },
-  
+
   -- sl single dungeon boss
   soleah = {
     npc_id = 180863,
@@ -359,23 +771,25 @@ local boss = {
     encounterID = 2440
   },
 
-  -- bfa raid boss
+  -- bfa single raid boss
   jaina = {
     npc_id = 149684,
     encounterID = 2281
   },
-  
-  -- bfa dungeon boss
+
+  -- bfa single dungeon boss
   sethraliss = {
     npc_id = 133392,
     encounterID = 2127
   },
-  
-  -- legion dungeon boss
+
+  -- legion single raid boss
+  -- legion single dungeon boss
   cordana = {
     npc_id = 95888,
     encounterID = 1818
   },
+
   archidruida_glaidalis = {
     npc_id = 96512,
     encounterID = 1836
@@ -391,10 +805,112 @@ local boss = {
   sombra_de_xavius = {
     npc_id = 99192,
     encounterID = 1839
+  },
+
+  hymdall = {
+    npc_id = 94960,
+    encounterID = 1805
+  },
+  hyrja = {
+    npc_id = 95833,
+    encounterID = 1806
+  },
+  fenryr = {
+    npc_id = 99868,
+    encounterID = 1807
+  },
+  rey_divino_skovald = {
+    npc_id = 95675,
+    encounterID = 1808
+  },
+  odyn_salones = {
+    npc_id = 95676,
+    encounterID = 1809
+  },
+  
+  capitan_patrulla_gerdo = {
+    npc_id = 104215,
+    encounterID = 1868
+  },
+  talixae_corona_fuego = {
+    npc_id = 104217,
+    encounterID = 1869
+  },
+  consejero_melandrus = {
+    npc_id = 101831,
+    encounterID = 1870
+  },
+
+  -- wod single raid boss
+  -- wod single dungeon boss
+  sadana_furia_sangrienta = {
+    npc_id = 75509,
+    encounterID = 1677
+  },
+  quijahueso = {
+    npc_id = 75452,
+    encounterID = 1679
+  },
+  ner_zhul_cementerio = {
+    npc_id = 76407,
+    encounterID = 1682
+  },
+  nhallish = {
+    npc_id = 75829,
+    encounterID = 1688
+  },
+
+  -- mists single raid boss
+  -- mists single dungeon boss
+  liu_corazon_llameante = {
+    npc_id = 56732,
+    encounterID = 1416
+  },
+  eremita_senda_petrea = {
+    npc_id = 56843,
+    encounterID = 1417
+  },
+  maro_el_sabio = {
+    npc_id = 56448,
+    encounterID = 1418
+  },
+  sha_de_la_duda = {
+    npc_id = 56439,
+    encounterID = 1439
   }
 }
 
 local instance = {
+  -- df dungeon
+  boveda_azur = {
+    instanceID = 2515
+  },
+  ataque_nokhud = {
+    instanceID = 2516
+  },
+  neltharus = {
+    instanceID = 2519
+  },
+  hondonada_frondacuero = {
+    instanceID = 2520
+  },
+  estanques_vida_rubi = {
+    instanceID = 2521
+  },
+  academia_algethar = {
+    instanceID = 2526
+  },
+  salas_de_infusion = {
+    instanceID = 2527
+  },
+  uldaman_legado_tyr = {
+    instanceID = 2451
+  },
+  -- df raid
+  boveda_encarnaciones = {
+    instanceID = 2522
+  },
+  
   -- sl dungeon
   teatro_dolor = {
     instanceID = 2293
@@ -473,7 +989,28 @@ local instance = {
   },
   dazaralor = {
     instanceID = 2070
+  },
+  
+  -- legion dungeon
+  salones_del_valor = {
+    instanceID = 1477
+  },
+  corte_de_estrellas = {
+    instanceID = 1571
+  },
+  -- legion raid
+
+  -- wod dungeon
+  cementerios_sombraluna = {
+    instanceID = 1176
+  },
+  -- wod raid
+
+  -- mists dungeon
+  templo_dragon_jade = {
+    instanceID = 960
   }
+  -- mists raid
 }
 
 local friend_units = {
@@ -588,6 +1125,106 @@ end
 
 function selecting_song()
   if false then
+
+  -- df raid boss
+  elseif boss_filter(boss.eranog) then
+    battle_play_file(song.boss.eranog)
+  elseif boss_filter(boss.consejo_primigenio) then
+    battle_play_file(song.boss.consejo_primigenio)
+  elseif boss_filter(boss.sennarth_aliento_gelido) then
+    battle_play_file(song.boss.sennarth_aliento_gelido)
+  elseif boss_filter(boss.kurog_totem_siniestro) then
+    battle_play_file(song.boss.kurog_totem_siniestro)
+  elseif boss_filter(boss.raszageth_devoratormentas) then
+    battle_play_file(song.boss.raszageth_devoratormentas)
+  elseif boss_filter(boss.vigilante_diurna) then
+    battle_play_file(song.boss.vigilante_diurna)
+  elseif boss_filter(boss.dathea_ascendida) then
+    battle_play_file(song.boss.dathea_ascendida)
+  elseif boss_filter(boss.terros) then
+    battle_play_file(song.boss.terros)
+
+  -- df dungeon boss
+  elseif boss_filter(boss.leymor) then
+    battle_play_file(song.boss.leymor)
+  elseif boss_filter(boss.telash_vientogris) then
+    battle_play_file(song.boss.telash_vientogris)
+  elseif boss_filter(boss.umbrelskul) then
+    battle_play_file(song.boss.umbrelskul)
+  elseif boss_filter(boss.hojazur) then
+    battle_play_file(song.boss.hojazur)
+
+  elseif boss_filter(boss.balakar_khan) then
+    battle_play_file(song.boss.balakar_khan)
+  elseif boss_filter(boss.teera_y_maruuk) then
+    battle_play_file(song.boss.teera_y_maruuk)
+  elseif boss_filter(boss.la_tempestad_iracunda) then
+    battle_play_file(song.boss.la_tempestad_iracunda)
+  elseif boss_filter(boss.granyth) then
+    battle_play_file(song.boss.granyth)
+
+  elseif boss_filter(boss.colmimagma) then
+    battle_play_file(song.boss.colmimagma)
+  elseif boss_filter(boss.senyora_guerra_sargha) then
+    battle_play_file(song.boss.senyora_guerra_sargha)
+  elseif boss_filter(boss.maestro_forja_gorek) then
+    battle_play_file(song.boss.maestro_forja_gorek)
+  elseif boss_filter(boss.magmat_azote_escamas) then
+    battle_play_file(song.boss.magmat_azote_escamas)
+
+  elseif boss_filter(boss.tiravisceras) then
+    battle_play_file(song.boss.tiravisceras)
+  elseif boss_filter(boss.faucefronda) then
+    battle_play_file(song.boss.faucefronda)
+  elseif boss_filter(boss.matriarca_descomposición_ojofurioso) then
+    battle_play_file(song.boss.matriarca_descomposición_ojofurioso)
+  elseif boss_filter(boss.banda_guerra_hachagarra) then
+    battle_play_file(song.boss.banda_guerra_hachagarra)
+
+  elseif boss_filter(boss.kokia_pezunya_ardiente) then
+    battle_play_file(song.boss.kokia_pezunya_ardiente)
+  elseif boss_filter(boss.melidrussa_tejescarcha) then
+    battle_play_file(song.boss.melidrussa_tejescarcha)
+  elseif boss_filter(boss.kyrakka_y_erkhart_sangre_tormentosa) then
+    battle_play_file(song.boss.kyrakka_y_erkhart_sangre_tormentosa)
+
+  elseif boss_filter(boss.vexamus) then
+    battle_play_file(song.boss.vexamus)
+  elseif boss_filter(boss.anciano_sin_podar) then
+    battle_play_file(song.boss.anciano_sin_podar)
+  elseif boss_filter(boss.graznat) then
+    battle_play_file(song.boss.graznat)
+  elseif boss_filter(boss.eco_de_doragosa) then
+    battle_play_file(song.boss.eco_de_doragosa)
+
+  elseif boss_filter(boss.vigia_irideus) then
+    battle_play_file(song.boss.vigia_irideus)
+  elseif boss_filter(boss.goliat_tragon) then
+    battle_play_file(song.boss.goliat_tragon)
+  elseif boss_filter(boss.khajin_la_implacable) then
+    battle_play_file(song.boss.khajin_la_implacable)
+  elseif boss_filter(boss.tsunami_primigenio) then
+    battle_play_file(song.boss.tsunami_primigenio)
+
+  elseif boss_filter(boss.vigia_irideus) then
+    battle_play_file(song.boss.vigia_irideus)
+  elseif boss_filter(boss.goliat_tragon) then
+    battle_play_file(song.boss.goliat_tragon)
+  elseif boss_filter(boss.khajin_la_implacable) then
+    battle_play_file(song.boss.khajin_la_implacable)
+  elseif boss_filter(boss.tsunami_primigenio) then
+    battle_play_file(song.boss.tsunami_primigenio)
+
+  elseif boss_filter(boss.enanos_desaparecidos) then
+    battle_play_file(song.boss.enanos_desaparecidos)
+  elseif boss_filter(boss.bromach) then
+    battle_play_file(song.boss.bromach)
+  elseif boss_filter(boss.centinela_talondras) then
+    battle_play_file(song.boss.centinela_talondras)
+  elseif boss_filter(boss.emberon) then
+    battle_play_file(song.boss.emberon)
+  elseif boss_filter(boss.cronolord_deios) then
+    battle_play_file(song.boss.cronolord_deios)
   
   -- sl raid boss
   elseif boss_filter(boss.guardian_vigilante) then
@@ -612,7 +1249,7 @@ function selecting_song()
     battle_play_file(song.boss.rygelon)
   elseif boss_filter(boss.carcelero) then
     battle_play_file(song.boss.carcelero)
-  
+
   -- sl dungeon boss
   elseif boss_filter(boss.oasis_myza) then
     battle_play_file(song.boss.oasis_myza)
@@ -624,18 +1261,20 @@ function selecting_song()
     battle_play_file(song.boss.capitana_colagarfio)
   elseif boss_filter(boss.soleah) then
     battle_play_file(song.boss.soleah)
-  
+
   -- bfa raid boss
   elseif boss_filter(boss.jaina) then
     battle_play_file(song.boss.jaina)
-  
+
   -- bfa dungeon boss
   elseif boss_filter(boss.sethraliss) then
     battle_play_file(song.boss.sethraliss)
-  
+
+  -- legion raid boss
   -- legion dungeon boss
   elseif boss_filter(boss.cordana) then
     battle_play_file(song.boss.cordana)
+
   elseif boss_filter(boss.archidruida_glaidalis) then
     battle_play_file(song.boss.archidruida_glaidalis)
   elseif boss_filter(boss.corazon_de_roble) then
@@ -644,7 +1283,104 @@ function selecting_song()
     battle_play_file(song.boss.dresaron)
   elseif boss_filter(boss.sombra_de_xavius) then
     battle_play_file(song.boss.sombra_de_xavius)
-  
+
+  elseif boss_filter(boss.hymdall) then
+    battle_play_file(song.boss.hymdall)
+  elseif boss_filter(boss.hyrja) then
+    battle_play_file(song.boss.hyrja)
+  elseif boss_filter(boss.fenryr) then
+    battle_play_file(song.boss.fenryr)
+  elseif boss_filter(boss.rey_divino_skovald) then
+    battle_play_file(song.boss.rey_divino_skovald)
+  elseif boss_filter(boss.odyn_salones) then
+    battle_play_file(song.boss.odyn_salones)
+
+  elseif boss_filter(boss.capitan_patrulla_gerdo) then
+    battle_play_file(song.boss.capitan_patrulla_gerdo)
+  elseif boss_filter(boss.talixae_corona_fuego) then
+    battle_play_file(song.boss.talixae_corona_fuego)
+  elseif boss_filter(boss.consejero_melandrus) then
+    battle_play_file(song.boss.consejero_melandrus)
+
+  -- wod raid boss
+  -- wod dungeon boss
+  elseif boss_filter(boss.sadana_furia_sangrienta) then
+    battle_play_file(song.boss.sadana_furia_sangrienta)
+  elseif boss_filter(boss.quijahueso) then
+    battle_play_file(song.boss.quijahueso)
+  elseif boss_filter(boss.ner_zhul_cementerio) then
+    battle_play_file(song.boss.ner_zhul_cementerio)
+  elseif boss_filter(boss.nhallish) then
+    battle_play_file(song.boss.nhallish)
+
+  -- mists raid boss
+  -- mists dungeon boss
+  elseif boss_filter(boss.liu_corazon_llameante) then
+    battle_play_file(song.boss.liu_corazon_llameante)
+  elseif boss_filter(boss.eremita_senda_petrea) then
+    battle_play_file(song.boss.eremita_senda_petrea)
+  elseif boss_filter(boss.maro_el_sabio) then
+    battle_play_file(song.boss.maro_el_sabio)
+  elseif boss_filter(boss.sha_de_la_duda) then
+    battle_play_file(song.boss.sha_de_la_duda)
+
+  -- df dungeon
+  elseif instance_filter(instance.boveda_azur.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.boveda_azur)
+    else
+      battle_play_file(song.instance.boveda_azur)
+    end
+  elseif instance_filter(instance.ataque_nokhud.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.ataque_nokhud)
+    else
+      battle_play_file(song.instance.ataque_nokhud)
+    end
+  elseif instance_filter(instance.neltharus.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.neltharus)
+    else
+      battle_play_file(song.instance.neltharus)
+    end
+  elseif instance_filter(instance.hondonada_frondacuero.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.hondonada_frondacuero)
+    else
+      battle_play_file(song.instance.hondonada_frondacuero)
+    end
+  elseif instance_filter(instance.estanques_vida_rubi.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.estanques_vida_rubi)
+    else
+      battle_play_file(song.instance.estanques_vida_rubi)
+    end
+  elseif instance_filter(instance.academia_algethar.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.academia_algethar)
+    else
+      battle_play_file(song.instance.academia_algethar)
+    end
+  elseif instance_filter(instance.salas_de_infusion.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.salas_de_infusion)
+    else
+      battle_play_file(song.instance.salas_de_infusion)
+    end
+  elseif instance_filter(instance.uldaman_legado_tyr.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.uldaman_legado_tyr)
+    else
+      battle_play_file(song.instance.uldaman_legado_tyr)
+    end
+  -- df raid
+  elseif instance_filter(instance.boveda_encarnaciones.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.boveda_encarnaciones)
+    else
+      battle_play_file(song.instance.boveda_encarnaciones)
+    end
+
   -- sl dungeon
   elseif instance_filter(instance.peste_abrumadora.instanceID) then
     if is_boss() then
@@ -726,14 +1462,6 @@ function selecting_song()
       battle_play_file(song.instance.sepulcro_primeros)
     end
   
-  -- bfa raid
-  elseif instance_filter(instance.dazaralor.instanceID) then
-    if is_boss() then
-      battle_play_file(song.boss.dazaralor)
-    else
-      battle_play_file(song.instance.dazaralor)
-    end
-
   -- bfa dungeon
   elseif instance_filter(instance.mansion_tarjasenda.instanceID) then
     if is_boss() then
@@ -770,7 +1498,47 @@ function selecting_song()
       battle_play_file(song.boss.santuario_tormenta)
     else
       battle_play_file(song.instance.santuario_tormenta)
-    end  
+    end
+  -- bfa raid
+  elseif instance_filter(instance.dazaralor.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.dazaralor)
+    else
+      battle_play_file(song.instance.dazaralor)
+    end
+
+  -- legion dungeon
+  elseif instance_filter(instance.salones_del_valor.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.salones_del_valor)
+    else
+      battle_play_file(song.instance.salones_del_valor)
+    end
+  elseif instance_filter(instance.corte_de_estrellas.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.corte_de_estrellas)
+    else
+      battle_play_file(song.instance.corte_de_estrellas)
+    end
+  -- legion raid
+
+  -- wod dungeon
+  elseif instance_filter(instance.cementerios_sombraluna.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.cementerios_sombraluna)
+    else
+      battle_play_file(song.instance.cementerios_sombraluna)
+    end
+  -- wod raid
+
+  -- mists dungeon
+  elseif instance_filter(instance.templo_dragon_jade.instanceID) then
+    if is_boss() then
+      battle_play_file(song.boss.templo_dragon_jade)
+    else
+      battle_play_file(song.instance.templo_dragon_jade)
+    end
+  -- mists raid
 
   elseif is_boss() then
     battle_play_file(song.boss.default_boss)
