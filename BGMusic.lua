@@ -278,6 +278,79 @@ local song = {
       duration = 139
     },
     
+    hymdall = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    hyrja = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    fenryr = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    rey_divino_skovald = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    odyn_salones = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    
+    capitan_patrulla_gerdo = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    talixae_corona_fuego = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    consejero_melandrus = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    
+    -- wod single raid boss
+    -- wod single dungeon boss
+    sadana_furia_sangrienta = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    quijahueso = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    ner_zhul_cementerio = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    nhallish = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+
+    -- mists single raid boss
+    -- mists single dungeon boss
+    liu_corazon_llameante = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    eremita_senda_petrea = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    maro_el_sabio = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    sha_de_la_duda = {
+      path = "Interface\\AddOns\\BGMusic\\arboleda_corazon_oscuro.mp3",
+      duration = 139
+    },
+    -------------------------------------------------------------------------------------
+    
     -- df dungeon boss
     boveda_azur = {
       path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
@@ -307,11 +380,16 @@ local song = {
       path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
       duration = 189
     },
+    uldaman_legado_tyr = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
     -- df raid boss
     boveda_encarnaciones = {
       path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
       duration = 189
     },
+
     -- sl dungeon boss
     teatro_dolor = {
       path = "Interface\\AddOns\\BGMusic\\The_Verge_of_Death_(Rain).mp3",
@@ -399,7 +477,32 @@ local song = {
       duration = 85
     },
 
+    -- legion dungeon
+    salones_del_valor = {
+      path = "Interface\\AddOns\\BGMusic\\full_circle.mp3",
+      duration = 85
+    },
+    corte_de_estrellas = {
+      path = "Interface\\AddOns\\BGMusic\\full_circle.mp3",
+      duration = 85
+    },
+    -- legion raid
 
+    -- wod dungeon
+    cementerios_sombraluna = {
+      path = "Interface\\AddOns\\BGMusic\\full_circle.mp3",
+      duration = 85
+    },
+    -- wod raid
+
+    -- mists dungeon
+    templo_dragon_jade = {
+      path = "Interface\\AddOns\\BGMusic\\full_circle.mp3",
+      duration = 85
+    },
+    -- mists raid
+
+    -------------------------------------------------------------------------------------
     default_boss = {
       path = "Interface\\AddOns\\BGMusic\\bosses.mp3",
       duration = 103
@@ -432,6 +535,10 @@ local song = {
       duration = 189
     },
     salas_de_infusion = {
+      path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
+      duration = 189
+    },
+    uldaman_legado_tyr = {
       path = "Interface\\AddOns\\BGMusic\\Shambhala_(Thunder).mp3",
       duration = 189
     },
@@ -527,7 +634,32 @@ local song = {
     dazaralor = {
       path = "Interface\\AddOns\\BGMusic\\battle_lusamine.mp3",
       duration = 179
-    }
+    },
+    
+    -- legion dungeon
+    salones_del_valor = {
+      path = "Interface\\AddOns\\BGMusic\\battle_lusamine.mp3",
+      duration = 179
+    },
+    corte_de_estrellas = {
+      path = "Interface\\AddOns\\BGMusic\\battle_lusamine.mp3",
+      duration = 179
+    },
+    -- legion raid
+
+    -- wod dungeon
+    cementerios_sombraluna = {
+      path = "Interface\\AddOns\\BGMusic\\battle_lusamine.mp3",
+      duration = 179
+    },
+    -- wod raid
+
+    -- mists dungeon
+    templo_dragon_jade = {
+      path = "Interface\\AddOns\\BGMusic\\battle_lusamine.mp3",
+      duration = 179
+    },
+    -- mists raid
   }
 }
 
